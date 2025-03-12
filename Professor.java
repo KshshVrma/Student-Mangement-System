@@ -6,10 +6,10 @@ class Professor{
         this.id=id;
         this.name=name;
     }
-    public setName(String name){
+    public void setName(String name){
         this.name=name;
     }
-    public Lecture(Course course){
-        course.professor=this;
+    public void Lecture(Course course){
+        course.professor=this.id;
     }
 }

@@ -1,7 +1,4 @@
 class Mangement{
-    private ArrayList studentList;
-
-
     public static void main(String[] args){
         Course dsa=new Course(1, "DSA");
         Course design= new Course(2, "Design");
@@ -32,7 +29,10 @@ class Mangement{
         six.enroll(dsa);
         six.enroll(design);
         six.enroll(Apti);
-        System.out.println(dsa);
+        System.out.println(dsa.Students);
+        System.out.println(dsa.professor);
+
+
 
 
     }

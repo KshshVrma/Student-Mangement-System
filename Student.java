@@ -4,7 +4,7 @@ class Student{
 
     private int id;
     private String name;
-    ArrayList<Course> courses;
+    public  ArrayList<Course> courses=new ArrayList<Course>();
     public Student(int id, String name){
         this.id=id;
         this.name=name;
@@ -14,7 +14,10 @@ class Student{
 
     }
     public void enroll(Course cour){
-        this.course.add(cour);
+        if(this.courses==null){
+            this.courses=new ArrayList<Course>();
+        }
+        this.courses.add(cour);
         cour.Students.add(this.id);
     }
 
